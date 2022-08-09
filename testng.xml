@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+	<listeners>
+		<listener class-name="com.mystore.utility.ListnerClass"></listener>
+	</listeners>
+<test verbose="2" preserve-order="true" name="Test_All">
+	<parameter name="browser" value="Chrome"></parameter>
+	<groups>
+		<run>
+			<include name="smoke"></include>
+			<include name="sanity"></include>
+			<include name="Regression"></include>
+		</run>
+	</groups>
+<classes>
+	<class name="com.mystore.utility.NewExcelLibrary"></class>
+	<class name="com.mystore.testcases.AccountCreationPageTest"></class>
+	<class name="com.mystore.testcases.EndtoEndTest"></class>
+	<class name="com.mystore.testcases.HomePageTest"></class>
+	<class name="com.mystore.testcases.LoginPageTest"></class>
+	<class name="com.mystore.testcases.AddToCartPageTest"></class>
+	<class name="com.mystore.testcases.IndexPageTests"></class>
+	<class name="com.mystore.testcases.OrderPageTest"></class>
+	<class name="com.mystore.testcases.SearchResultPageTest"></class>
+</classes>
+</test></suite>
